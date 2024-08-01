@@ -409,6 +409,20 @@ Collections and Lists/Maps
           •	Prints the list of customers after sorting.
 
    5.	Advanced Collection Operations: Use Java Streams to filter and sort BankAccount objects based on different criteria, such as balance greater than a specified amount.
+      a.	BankAccount Class:
+            •	Contains private fields accountNumber and balance.
+            •	Includes a constructor to initialize these fields.
+            •	Provides getter methods for accountNumber and balance.
+            •	Provides deposit and withdraw methods to modify the balance.
+            •	Overrides the toString method to provide a string representation of the object.
+      b.	BankApp Class:
+            •	Imports necessary classes from the java.util and java.util.stream packages.
+            •	Defines the main method to execute the program.
+            •	Creates a list of BankAccount objects.
+            •	Adds several BankAccount objects to the list.
+            •	Uses Java Streams to filter and sort the list of BankAccount objects based on balance greater than 1000.
+            •	Collects the filtered and sorted list and prints the results.
+            •	Further filters the list to accounts with balance greater than 1500 and sorts by account number, then prints the results.
 
 Exceptions
 
