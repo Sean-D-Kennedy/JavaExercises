@@ -23,9 +23,9 @@ public class Bank {
 
     public void printCustomers() {
         for (Customer customer : customers) {
-            System.out.println("Customer ID: " + customer.customerId);
-            System.out.println("Name: " + customer.name);
-            System.out.println("Address: " + customer.address);
+            System.out.println("Customer ID: " + customer.getCustomerId());
+            System.out.println("Name: " + customer.getName());
+            System.out.println("Address: " + customer.getAddress());
         }
     }
 
@@ -46,14 +46,3 @@ public class Bank {
     }
 }
 
-class Customer {
-    public String customerId;
-    public String name;
-    public String address;
-
-    Customer(String customerId, String name, String address) {
-        this.customerId = customerId;
-        this.name = name;
-        this.address = address;
-    }
-}

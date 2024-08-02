@@ -1,4 +1,4 @@
-package com.example.classes.composition;
+package com.example.classes.more_aggregation;
 
 public class Loan {
     private Customer customer;
@@ -13,8 +13,8 @@ public class Loan {
 
     public void printLoanDetails() {
         System.out.println("Loan Amount: " + loanAmount);
-        System.out.println("Customer ID: " + customer.customerId);
-        System.out.println("Name: " + customer.name);
+        System.out.println("Customer ID: " + customer.getCustomerId());
+        System.out.println("Name: " + customer.getName());
         System.out.println("Account Number: " + account.getAccountNumber());
         System.out.println("Account Balance: " + account.getBalance());
     }
@@ -28,44 +28,3 @@ public class Loan {
     }
 }
 
-class Customer {
-    public String customerId;
-    public String name;
-    public String address;
-
-    Customer(String customerId, String name, String address) {
-        this.customerId = customerId;
-        this.name = name;
-        this.address = address;
-    }
-}
-
-class BankAccount {
-    private String accountNumber;
-    private double balance;
-
-    BankAccount(String accountNumber, double balance) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void deposit(double amount) {
-        balance += amount;
-    }
-
-    public void withdraw(double amount) {
-        if (balance >= amount) {
-            balance -= amount;
-        } else {
-            System.out.println("Insufficient funds");
-        }
-    }
-}
