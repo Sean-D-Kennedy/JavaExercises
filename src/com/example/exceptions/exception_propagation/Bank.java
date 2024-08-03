@@ -33,12 +33,12 @@ public class Bank {
     }
 
     public void withdrawFromAccount(BankAccount account, double amount) throws InsufficientFundsException {
-        account.withdraw(amount);
+        account.withdraw(amount); // exception generated but not handled here, handled in caller method: performOperations
         System.out.println("Withdrew " + amount + " from account " + account.getAccountNumber());
     }
 
     public void transferFundsBetweenAccounts(BankAccount fromAccount, BankAccount toAccount, double amount) throws InsufficientFundsException, InvalidAccountException {
-        fromAccount.transferFunds(toAccount, amount);
+        fromAccount.transferFunds(toAccount, amount); // exception generated but not handled here, handled in caller method: performOperations
     }
 
     public static void main(String[] args) {

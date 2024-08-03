@@ -30,7 +30,11 @@ public class CustomerApp {
 
     public static void main(String[] args) {
         // Specify the file path
-        String fileName = "customers.txt";
+        String fileName = "customers.txt"; // generates an exception (no file present)
+
+        // File would be comma-separated as follows (put in project root folder):
+        //    C001,Sean,Ireland
+        //    C002,Maaike,Holland
 
         // Read customers from the file
         List<Customer> customers = readCustomersFromFile(fileName);
