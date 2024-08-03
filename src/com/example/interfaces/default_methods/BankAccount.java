@@ -1,41 +1,5 @@
 package com.example.interfaces.default_methods;
 
-// Interface Transferable
-interface Transferable {
-    void transferFunds(BankAccount toAccount, double amount);
-
-    default void logTransaction(String transactionDetail) {
-        System.out.println("Transaction Log: " + transactionDetail);
-    }
-}
-
-// Abstract class Account
-abstract class Account {
-    private String accountNumber;
-    private double balance;
-
-    Account(String accountNumber, double balance) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public abstract void deposit(double amount);
-
-    public abstract void withdraw(double amount);
-
-    protected void setBalance(double balance) {
-        this.balance = balance;
-    }
-}
-
 // BankAccount class implementing Transferable
 public class BankAccount extends Account implements Transferable {
 
