@@ -87,6 +87,7 @@ Create a custom comparator to sort `Customer` objects based on their name. Demon
     - Bonus: Use a method reference instead of a lambda expression for the above.
 - Outputs the list of customers after sorting (enhanced-for loop).
 
+## Bonus
 ## 5. Advanced Collection Operations
 Use Java Streams to filter and sort `BankAccount` objects based on different criteria, such as balance greater than a specified amount.
 
