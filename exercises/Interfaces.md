@@ -1,6 +1,37 @@
 # Interfaces
 
-## 1. Simple Interface
+## 1. Interface Implementation
+Create an interface `Taxable` with a method `calculateTax`. Implement this interface in `SavingsAccount` and `CurrentAccount` to calculate tax based on different rules.
+
+### a. Taxable Interface:
+- Defines a method `calculateTax()` that returns a double value.
+
+### b. `Account` Abstract Class:
+- The base class with common properties `accountNumber` and `balance`.
+- Abstract methods `deposit` and `withdraw`.
+- Provides a `protected` `setBalance` method to update the balance.
+
+### c. `BankAccount` Class:
+- Inherits from `Account`.
+- Implements the `deposit` and `withdraw` methods.
+
+### d. `SavingsAccount` Class:
+- Inherits from `BankAccount` and implements the `Taxable` interface.
+- Adds properties `interestRate` and `minimumBalance`.
+- Overrides the `withdraw` method to ensure balance does not fall below the minimum balance.
+- Implements the `calculateTax` method to calculate a 10% tax on the balance.
+
+### e. `CurrentAccount` Class:
+- Inherits from `BankAccount` and implements the `Taxable` interface.
+- Adds a property `overdraftLimit`.
+- Overrides the `withdraw` method to allow withdrawals up to the overdraft limit.
+- Implements the `calculateTax` method to calculate a 15% tax on the balance.
+
+### f. `Main` Class:
+- Demonstrates the functionality by creating instances of `SavingsAccount` and `CurrentAccount`.
+- Prints the account details and calculated tax for each account.
+
+## 2. Simple Interface
 Create an interface `Transferable` with a method `transferFunds`. Implement this interface in `BankAccount`.
 
 ### a. `Transferable` Interface:
@@ -20,7 +51,7 @@ Create an interface `Transferable` with a method `transferFunds`. Implement this
 - Demonstrates the functionality by creating two instances of `BankAccount`.
 - Prints the balance of both accounts before and after transferring funds from one account to the other.
 
-## 2. Multiple Interfaces
+## 3. Multiple Interfaces
 Create another interface `Reportable` with a method `generateReport`. Implement both `Transferable` and `Reportable` in `BankAccount`.
 
 ### a. `Transferable` Interface:
@@ -44,7 +75,7 @@ Create another interface `Reportable` with a method `generateReport`. Implement 
 - Demonstrates the functionality by creating two instances of `BankAccount`.
 - Prints the report for both accounts before and after transferring funds from one account to the other.
 
-## 3. Interface Inheritance
+## 4. Interface Inheritance
 Create an interface `PremiumAccount` that extends `Transferable` and adds a method `offerPremiumBenefits`. Implement this in a `PremiumBankAccount` class.
 
 ### a. `Transferable` Interface:
@@ -72,7 +103,7 @@ Create an interface `PremiumAccount` that extends `Transferable` and adds a meth
 - Prints the premium account details, offers premium benefits, and performs a fund transfer from the premium account to the regular account.
 - Prints the balances of both accounts before and after the transfer.
 
-## 4. Default Methods
+## 5. Default Methods
 Add a `default` method `logTransaction` in `Transferable` and demonstrate its use in `BankAccount`.
 
 ### a. `Transferable` Interface:
@@ -95,7 +126,7 @@ Add a `default` method `logTransaction` in `Transferable` and demonstrate its us
 - Prints the balances of both accounts after the transactions.
 
 ## Bonus 
-## 5. Functional Interfaces
+## 6. Functional Interfaces
 Create a functional interface `InterestCalculator` with a method `calculateInterest`. Use it with a lambda expression to calculate interest in `SavingsAccount`.
 
 ### a. `InterestCalculator` Functional Interface:

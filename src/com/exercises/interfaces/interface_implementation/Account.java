@@ -1,4 +1,4 @@
-package com.exercises.inheritance.interface_implementation;
+package com.exercises.interfaces.interface_implementation;
 
 // Abstract class Account
 public abstract class Account {

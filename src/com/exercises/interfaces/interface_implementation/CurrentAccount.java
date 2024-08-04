@@ -1,4 +1,4 @@
-package com.exercises.inheritance.interface_implementation;
+package com.exercises.interfaces.interface_implementation;
 
 // CurrentAccount class implementing Taxable
 public class CurrentAccount extends BankAccount implements Taxable {

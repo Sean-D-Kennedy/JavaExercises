@@ -1,7 +1,7 @@
 package com.demo.static_example;
 public class Cat {
     private String name;
-    private static int count;
+    private static int count=0;
 
     public Cat() {
         count++;

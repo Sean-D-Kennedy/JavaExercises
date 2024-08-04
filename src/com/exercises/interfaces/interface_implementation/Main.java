@@ -1,4 +1,4 @@
-package com.exercises.inheritance.interface_implementation;
+package com.exercises.interfaces.interface_implementation;
 
 // Main class to demonstrate functionality
 public class Main {

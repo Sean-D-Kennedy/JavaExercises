@@ -1,4 +1,4 @@
-package com.exercises.inheritance.interface_implementation;
+package com.exercises.interfaces.interface_implementation;
 
 // SavingsAccount class implementing Taxable
 public class SavingsAccount extends BankAccount implements Taxable {

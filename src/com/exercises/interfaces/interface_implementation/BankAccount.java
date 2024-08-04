@@ -1,4 +1,4 @@
-package com.exercises.inheritance.interface_implementation;
+package com.exercises.interfaces.interface_implementation;
 
 // BankAccount class inheriting from Account
 public class BankAccount extends Account {
