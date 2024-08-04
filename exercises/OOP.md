@@ -19,16 +19,16 @@ Create a `BankAccount` class with properties: `accountNumber` and `balance`. Wri
 Add methods to the `BankAccount` class: `deposit(double amount)` and `withdraw(double amount)`. Write a program to demonstrate the use of these methods.
 
 ### a. Define the Class:
-- Define a public class named `BankAccount`.
+- Define a `public` class named `BankAccount`.
 
 ### b. Declare Fields:
-- Add two public fields: `accountNumber` and `balance`.
+- Add two `public` fields: `accountNumber` and `balance`.
 
 ### c. Implement the _deposit_ Method:
-- Define a public method `deposit` that takes a `double` amount as a parameter and adds it to the balance.
+- Define a `public` method `deposit` that takes a `double` amount as a parameter and adds it to the balance.
 
 ### d. Implement the _withdraw_ Method:
-- Define a public method `withdraw` that takes a `double` amount as a parameter.
+- Define a `public` method `withdraw` that takes a `double` amount as a parameter.
 - Check if the balance is sufficient to cover the withdrawal amount.
 - If sufficient, subtract the amount from the balance.
 - If not sufficient, print an “Insufficient funds” message.
