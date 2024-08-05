@@ -10,10 +10,10 @@ public class Dog implements Behaviour, Action {
 
     // The default method from the interface can be used directly
     // Optionally, you can override the default method if needed
-    @Override
-    public void eat() {
-        System.out.println("The dog is eating dog food.");
-    }
+//    @Override
+//    public void eat() {
+//        System.out.println("The dog is eating dog food.");
+//    }
 
     public static void main(String[] args) {
         Dog dog = new Dog();
