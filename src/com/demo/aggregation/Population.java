@@ -12,7 +12,7 @@ public class Population {
         people = new ArrayList<>();
     }
     public void addPerson(Person p){
-        people.add(p);
+        this.people.add(p);
     }
     public void deletePerson(Person p){
         people.remove(p);
@@ -23,6 +23,7 @@ public class Population {
         }
     }
     public static void main(String[]args){
+       // addPerson(new Person("joe bloggs", 21));
         Population population = new Population();
         population.addPerson(new Person("joe bloggs", 21));
         population.display();

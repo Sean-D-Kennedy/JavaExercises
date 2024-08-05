@@ -1,6 +1,6 @@
 package com.demo.Inheritance;
 
-public class Animal {
+public class Animal extends Object {
     private String name;
 
     public Animal(String name) {

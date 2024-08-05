@@ -5,23 +5,23 @@ public class Person {
     private String name; // instance variable
     private int age;
 
-    public Person() {
+    public Person() { // no-args constructor
         name="";
         age=0;
     }
 
-    public Person(String name, int age) {
+    public Person(String name, int age) { // overloaded constructor
         this.name = name;
         this.age = age;
     }
 
-    public String getName() {
+    public String getName() { // instance (non-static) method
         String s = "The name is " + name; // local variable
         return s;
     }
 
-    public void setName(String aName) {
-        this.name = aName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -32,15 +32,21 @@ public class Person {
         return prefix + age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int aAge) {
+        age = aAge;
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
+                "name='" + this.name + '\'' +
                 ", age=" + age +
                 '}';
     }
 }
+
+
+
+
+
+

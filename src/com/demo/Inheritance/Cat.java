@@ -1,6 +1,6 @@
 package com.demo.Inheritance;
 
-public class Cat extends Animal{
+public class Cat extends Animal{ // a Cat "IS-A" Animal
     public Cat(String name) {
         super(name);
     }
@@ -11,9 +11,9 @@ public class Cat extends Animal{
     }
 
     public static void main(String[] args) {
-        Cat zia = new Cat("Zia");
-        System.out.println(zia.getName()); // getName() is inherited
+        Animal zia = new Cat("Zia");
+//        System.out.println(zia.getName()); // getName() is inherited
 
-        System.out.println(zia);
+        System.out.println(zia.toString());
     }
 }

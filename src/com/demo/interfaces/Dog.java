@@ -1,10 +1,11 @@
 package com.demo.interfaces;
 
+//public class Dog extends Object implements Behaviour, Action {
 public class Dog implements Behaviour, Action {
     // Implement the abstract method
     @Override
     public void makeSound() {
-        System.out.println("The dog barks.");
+        System.out.println("Dogs bark.");
     }
 
     // The default method from the interface can be used directly
@@ -19,7 +20,7 @@ public class Dog implements Behaviour, Action {
         dog.eat();        // Outputs: The dog is eating dog food.
 
         // Using a lambda expression to implement the functional interface Action
-        Action action = () -> System.out.println("Dogs bark...");
-        action.makeSound();   // Outputs: Dogs bark...
+        Action action = () -> System.out.println("Dogs bark..."); // set lambda up
+        action.makeSound();   // Execute lambda. Outputs: Dogs bark...
     }
 }

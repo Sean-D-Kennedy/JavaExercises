@@ -1,7 +1,7 @@
 package com.demo.static_example;
 public class Cat {
     private String name;
-    private static int count=0;
+    private static int count=0; // class variable, shared by all instances
 
     public Cat() {
         count++;
@@ -21,6 +21,7 @@ public class Cat {
     }
 
     public static int getCount() {
+    //    this.name = "SK";
         return count;
     }
     
